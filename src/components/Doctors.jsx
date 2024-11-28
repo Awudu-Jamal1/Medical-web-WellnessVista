@@ -9,33 +9,33 @@ const Doctors = () => {
   const data = [
     {
       img: "/src/assets/img/doc1.jpg",
-      name: "Dr. Serena Mitchell",
-      specialties: "Orthopedic Surgeon",
+      name: "PRODUCT ONE",
+      specialties: "Inventore eligendi omnis sint doloremque, eum aliquam blanditiis natus nostrum nisi quibusdam ipsa quisquam dolorum voluptate alias" ,
     },
     {
       img: "/src/assets/img/doc2.jpg",
-      name: "Dr. Julian Bennett",
-      specialties: "Cardiologist",
+      name: "PRODUCT TWO",
+      specialties: "Inventore eligendi omnis sint doloremque, eum aliquam blanditiis natus nostrum nisi quibusdam ipsa quisquam dolorum voluptate alias",
     },
     {
       img: "/src/assets/img/doc3.jpg",
-      name: "Dr. Camila Rodriguez",
-      specialties: "Pediatrician",
+      name: "PRODUCT THREE",
+      specialties: "Inventore eligendi omnis sint doloremque, eum aliquam blanditiis natus nostrum nisi quibusdam ipsa quisquam dolorum voluptate alias",
     },
     {
       img: "/src/assets/img/doc4.jpg",
-      name: "Dr. Victor Nguyen",
-      specialties: "Neurologist",
+      name: "PRODUCT FOUR",
+      specialties: "Inventore eligendi omnis sint doloremque, eum aliquam blanditiis natus nostrum nisi quibusdam ipsa quisquam dolorum voluptate alias",
     },
     {
       img: "/src/assets/img/doc5.jpg",
-      name: "Dr. Ethan Carter",
-      specialties: "Dermatologist",
+      name: "PRODUCT FIVE",
+      specialties: "Inventore eligendi omnis sint doloremque, eum aliquam blanditiis natus nostrum nisi quibusdam ipsa quisquam dolorum voluptate alias",
     },
     {
       img: "/src/assets/img/doc6.jpg",
-      name: "Dr. Olivia Martinez",
-      specialties: "Ophthalmologist",
+      name: "PRODUCT SIX",
+      specialties: "Inventore eligendi omnis sint doloremque, eum aliquam blanditiis natus nostrum nisi quibusdam ipsa quisquam dolorum voluptate alias",
     },
   ];
 
@@ -83,7 +83,7 @@ const Doctors = () => {
       <div className=" flex flex-col items-center lg:flex-row justify-between mb-10 lg:mb-0">
         <div>
           <h1 className=" text-4xl font-semibold text-center lg:text-start">
-            Our Doctors
+          See the latest Technologies Available
           </h1>
           <p className=" mt-2 text-center lg:text-start">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus,
@@ -92,16 +92,16 @@ const Doctors = () => {
         </div>
         <div className="flex gap-5 mt-4 lg:mt-0">
           <button
-            className=" bg-[#d5f2ec] text-backgroundColor px-4 py-2 rounded-lg active:bg-[#ade9dc]"
+            className="  text-backgroundColor px-4 py-2 rounded-lg active:bg-[#ade9dc]"
             onClick={() => slider.current.slickPrev()}
           >
-            <FaArrowLeft size={25} />
+            <FaArrowLeft size={18} />
           </button>
           <button
-            className=" bg-[#d5f2ec] text-backgroundColor px-4 py-2 rounded-lg active:bg-[#ade9dc]"
+            className="   text-backgroundColor px-4 py-2 rounded-lg active:bg-[#ade9dc]"
             onClick={() => slider.current.slickNext()}
           >
-            <FaArrowRight size={25} />
+            <FaArrowRight size={18} />
           </button>
         </div>
       </div>
@@ -109,7 +109,7 @@ const Doctors = () => {
         <Slider ref={slider} {...settings}>
           {data.map((e, index) => (
             <div
-              className="h-[350px] text-black rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mb-2 cursor-pointer"
+              className="h-[400px] text-black rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mb-2 cursor-pointer"
               key={index}
             >
               <div>
@@ -122,7 +122,7 @@ const Doctors = () => {
 
               <div className=" flex flex-col justify-center items-center">
                 <h1 className=" font-semibold text-xl pt-4">{e.name}</h1>
-                <h3 className=" pt-2">{e.specialties}</h3>
+                <p className=" pt-2 text-sm px-2">{e.specialties}</p>
               </div>
             </div>
           ))}
