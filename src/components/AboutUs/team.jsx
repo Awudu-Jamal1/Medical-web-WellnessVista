@@ -50,7 +50,7 @@ function MeetTeam() {
           <h1 className="text-3xl font-bold pb-8 tracking-wide">
             Let us introduce ourselves
           </h1>
-          <div className="grid grid-cols-3 place-items-center text-center">
+          <div className="grid lg:grid-cols-3 place-items-center text-center">
             <div className="">
               <div >
                 <img

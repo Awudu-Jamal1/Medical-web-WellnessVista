@@ -2,7 +2,7 @@ function CeoFounder() {
   return (
     <>
       <div className="flex bg-backgroundColor text-white  flex-col justify-center lg:px-32 px-5 py-12 lg:py-24 ">
-        <div className="flex gap-24">
+        <div className="flex flex-col lg:flex-row gap-24">
         <div>
           <img src="https://lifeline.wpcharity.com/wp-content/uploads/2020/12/review-2-330x330_c.jpg" alt="" />
         </div>
