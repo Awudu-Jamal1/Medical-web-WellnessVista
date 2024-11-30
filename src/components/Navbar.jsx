@@ -148,7 +148,7 @@ const Navbar = () => {
             Services
           </Link>
           <Link
-            to="doctors"
+            to="technologies"
             spy={true}
             smooth={true}
             duration={500}

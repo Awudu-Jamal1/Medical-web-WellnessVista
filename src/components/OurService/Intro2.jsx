@@ -22,7 +22,7 @@ function ServiceIntro() {
 
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-10 m-auto max-w-5xl py-24 text-center">
+        <div className="grid lg:bgrid-cols-3 gap-10 m-auto max-w-5xl py-24 text-center">
           <div>
             <FontAwesomeIcon
               className="text-[40px] text-backgroundColor"

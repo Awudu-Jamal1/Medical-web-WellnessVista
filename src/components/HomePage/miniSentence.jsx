@@ -23,9 +23,10 @@ function MiniSentense() {
             <button className="bg-backgroundColor rounded-md text-white py-2 px-5 font-bold">Discover More</button>
         </div>
         </div>
+        <div className="hidden lg:block"><img className="slizer  absolute hidden    lg:block lg:top-[700px] lg:left-[1000px]"  src="https://show.moxcreative.com/techit/wp-content/uploads/sites/19/2021/11/innovative-business-technology-1536x1024.jpg" alt="" /></div>
         <div>
 
-            <img className="absolute hidden slizer md:hidden lg:block top-[700px] left-[1000px]"  src="https://show.moxcreative.com/techit/wp-content/uploads/sites/19/2021/11/innovative-business-technology-1536x1024.jpg" alt="" />
+            
             <img className=" slizer2 lg:hidden "  src="https://show.moxcreative.com/techit/wp-content/uploads/sites/19/2021/11/innovative-business-technology-1536x1024.jpg" alt="" />
         </div>
         {/* <div className="hidden md:block lg:hidden">mdxxxxxxx</div> */}
