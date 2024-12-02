@@ -4,6 +4,8 @@ import consultation from "../../assets/img/consultation.jpg";
 import mobileapp from "../../assets/img/mobileapp.jpg";
 import telemedicine from "../../assets/img/telemedicine.jpg";
 import { useNavigate } from "react-router-dom";
+import { useInView } from "react-intersection-observer";
+
 
 const product = [
   {
@@ -30,6 +32,10 @@ const product = [
 ];
 
 function OurService() {
+    const {ref , inView}=useInView({
+        threshold:0.1,
+        triggerOnce:true
+    })
   const navigate = useNavigate();
   return (
     <>
@@ -42,7 +48,7 @@ function OurService() {
           Unlock innovative tech solutions that transform healthcare and improve outcomes across Africa.
           </p>
         </div>
-        <div className="grid lg:grid-cols-3 gap-20">
+        <div ref={ref} className={`grid lg:grid-cols-3 ${inView? "tilt-in-left-1" :" "} gap-20`}>
           {product.map((p, id) => (
             <div key={id} className="services hover:scale-105 ">
               <div>

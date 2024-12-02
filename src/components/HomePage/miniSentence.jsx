@@ -1,8 +1,14 @@
+import { useInView } from "react-intersection-observer";
+
 function MiniSentense() {
+    const {ref , inView}=useInView({
+        threshold:0.1,
+        triggerOnce:true
+    })
   return (
     <>
       <div className=" text-md semi-bold  grid md:grid-cols-1 lg:grid-cols-3 gap-4  leading-normal  justify-center lg:px-32 px-5 py-24 lg:py-28">
-        <div className= "lg:col-span-2 md-grid py-3 px-2">
+        <div ref={ref} className= {`lg:col-span-2 md-grid py-3 px-2 ${inView? "tilt-in-left-1" :" "}`} >
             <div className="text-backgroundColor  py-5 tracking-wider font-bold">
                 ABOUT US
             </div>
@@ -19,7 +25,7 @@ function MiniSentense() {
           and cutting-edge solutions tailored to meet the unique needs of your
           organization.
         </p>
-        <div className="pt-10">
+        <div className="pt-10 ">
             <button className="bg-backgroundColor rounded-md text-white py-2 px-5 font-bold">Discover More</button>
         </div>
         </div>

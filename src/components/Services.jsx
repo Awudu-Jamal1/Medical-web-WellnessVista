@@ -9,14 +9,19 @@ import { MdHealthAndSafety } from "react-icons/md";
 import { FaHeartbeat } from "react-icons/fa";
 
 import { Link, useNavigate } from "react-router-dom";
+import { useInView } from "react-intersection-observer";
 
 const Services = () => {
   const navigate=useNavigate()
+  const {ref , inView}=useInView({
+    threshold:0.1,
+    triggerOnce:true
+})
 
   return (
     <div className="  grid lg:grid-cols-2 text-white  bg-footer  justify-center lg:px-32 px-5  gap-20 py-28 ">
       <div>
-        <img className="imageSlizer" src={service1} alt="" />
+        <img ref={ref} className={`imageSlizer ${inView? "scale-in-center" :" "}`} src={service1} alt="" />
       </div>
       <div className="px-2">
         <div className="text-backgroundColor  py-5 tracking-wider font-bold">
