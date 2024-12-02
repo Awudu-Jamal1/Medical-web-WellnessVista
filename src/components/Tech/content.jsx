@@ -22,8 +22,11 @@ const product=[{
 
 function TechContent() {
     return (  <>
-        <div className="w-3/4 m-auto py-10  ">
-        <div className=" w-full"><h6 className="text-2xl font-semibold m-auto text-center max-w-3xl">
+        <div className="w-3/4 m-auto py-24  ">
+        <div className=" m-auto text-center max-w-3xl py-16">
+            <h6 className="uppercase text-sm font-bold py-2 text-backgroundColor">Our product</h6>
+            <h1 className="text-5xl font-bold">See what we offer</h1>
+            <h6 className="text-md  text-gray-600 py-5 font-semibold  ">
         Murphy eHealth Technologies is proud to offer a range of innovative products
         designed to enhance healthcare delivery</h6></div>
         <section className="py-14">
