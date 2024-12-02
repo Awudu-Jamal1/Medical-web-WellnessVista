@@ -17,6 +17,7 @@ const team = [
 ];
 
 import groupWork from "../../assets/img/group.jpg"
+import ProgressBar from "./progressBar";
 
 function MeetTeam() {
   return (
@@ -43,50 +44,17 @@ function MeetTeam() {
         <div>
             <img src="https://show.moxcreative.com/techit/wp-content/uploads/sites/19/2021/11/green-business-team-1536x1062.jpg" className="h-full w-full" alt="" />
         </div>
-        <div className="bg-footer py-36 text-white text-center px-20">
-          <h6 className="text-sm text-backgroundColor uppercase tracking-wider font-bold py-1 ">
-            our team
+        <div className="bg-[#f7f7f7] py-32  text-left px-20">
+          <h6 className="text-sm  text-backgroundColor uppercase tracking-wider font-bold py-2 ">
+            Professional Team
           </h6>
-          <h1 className="text-3xl font-bold pb-8 tracking-wide">
-            Let us introduce ourselves
+          <h1 className="text-4xl capitalize font-bold pb-2 tracking-wide">
+            Why we different
           </h1>
-          <div className="grid lg:grid-cols-3 place-items-center text-center">
-            <div className="">
-              <div >
-                <img
-                  src="https://show.moxcreative.com/techit/wp-content/uploads/sites/19/2021/11/the-attractive-man-e1637378970560.jpg"
-                  alt="" className="h-40 rounded-lg"
-                />
-              </div>
-              <div >
-                <p className="text-lg font-bold">John Frank</p>
-                <p className="font-semibold text-md text-gray-400">Developer</p>
-              </div>
-            </div>
-            <div className="">
-              <div>
-                <img
-                  src="https://show.moxcreative.com/techit/wp-content/uploads/sites/19/2021/11/the-attractive-man-e1637378970560.jpg"
-                  alt=""  className="h-40 rounded-lg"
-                />
-              </div>
-              <div className="">
-              <p className="text-lg font-bold">John Frank</p>
-              <p className="font-semibold text-md text-gray-400">Developer</p>
-              </div>
-            </div>
-            <div>
-              <div>
-                <img
-                  src="https://show.moxcreative.com/techit/wp-content/uploads/sites/19/2021/11/the-attractive-man-e1637378970560.jpg"
-                  alt=""  className="h-40 rounded-lg"
-                />
-              </div>
-              <div>
-              <p className="text-lg font-bold">John Frank</p>
-              <p className="font-semibold text-md text-gray-400">Developer</p>
-              </div>
-            </div>
+          <p className="font-semibold text-gray-600 text-md py-2 pb-10">
+          Murphy eHealth stands out with a dedicated team combining expertise in healthcare, technology, and innovation, offering tailored, user-centric solutions for improved health outcomes and seamless digital experiences.</p>
+          <div>
+            <ProgressBar/>
           </div>
         </div>
       </div>
