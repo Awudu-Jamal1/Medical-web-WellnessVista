@@ -54,7 +54,7 @@ const ProgressBar = () => {
                     </svg> */}
                   </h4>
                   <span
-                    className={`px-2 py-1 rounded-lg bg-${item.color}-50 text-gray-600 text-xs`}
+                    className={`px-2 py-1 rounded-lg bg-${item.color}-50 text-gray-600 font-semibold text-xs`}
                   >
                     {item.score} / 10
                   </span>

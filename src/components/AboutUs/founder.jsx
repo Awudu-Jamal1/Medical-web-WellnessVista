@@ -6,7 +6,7 @@ function CeoFounder() {
         <div>
           <img src="https://lifeline.wpcharity.com/wp-content/uploads/2020/12/review-2-330x330_c.jpg" alt="" />
         </div>
-        <div className="w-[600px] leading-normal tracking-wide py-5 text-2xl">
+        <div className="lg:w-[600px] leading-normal tracking-wide py-5 text-2xl">
           Nunc commodo tellus di sed molestie quam Etiam c commodo tNunc commodo
           tellus di sed mole stie quam quam EtiamNunc commodo tellus di sed
           molellus di sed mole stie.{" "}

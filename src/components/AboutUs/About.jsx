@@ -16,12 +16,12 @@ const About = () => {
       <div className=" w-full lg:w-3/4 space-y-4 px-3">
       
         
-        <p className=" text-justify font-semibold lg:text-start leading-10 f text-2xl tracking-wider text-gray-600">
+        <p className=" text-justify font-semibold lg:text-start leading-10 f text-2xl tracking-wide text-gray-600">
        <span className="text-backgroundColor font-semibold leading-10"> Murphy eHealth Technologies Limited</span>  is a leading provider of innovative healthcare
 solutions, dedicated to transforming the healthcare industry through the integration of
 cutting-edge technology. 
         </p>
-        <p className="text-justify font-semibold lg:text-start text-gray-600 text-2xl leading-10 tracking-wider">
+        <p className="text-justify font-semibold lg:text-start text-gray-600 text-2xl leading-10 tracking-wide">
         We specialize in developing advanced, reliable, and
 scalable systems that improve the delivery of healthcare services, enhance patient
 outcomes, and optimize operational efficiencies. Our team combines expertise in
