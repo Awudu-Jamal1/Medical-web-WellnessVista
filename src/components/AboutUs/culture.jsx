@@ -2,11 +2,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLayerGroup,faPuzzlePiece,faLink
 } from "@fortawesome/free-solid-svg-icons";
+import { useInView } from "react-intersection-observer";
 
 function OurCulture() {
+    const {ref , inView}=useInView({
+        threshold:0.1,
+        triggerOnce:true
+    })
     return (  <>
     <div>
-        <div className="w-3/4 lg:w-full m-auto lg:px-28 py-24">
+        <div className="w-3/4 lg:w-full m-auto lg:px-28 py-16">
         <div className="text-backgroundColor uppercase text-center  py-5 tracking-wider font-bold">
                 our culture
             </div>
@@ -15,7 +20,7 @@ function OurCulture() {
           Our Fundamental Business
           </h1>
         </div>
-        <div className="grid lg:grid-cols-3 gap-10">
+        <div className={`grid lg:grid-cols-3 gap-10 ${inView? "slide-in-left" :" "}`} ref={ref}>
             <div className="flex border-2  border-backgroundColor  px-5 py-8 ">
                 <div> <FontAwesomeIcon className="text-[40px] text-backgroundColor" icon={faLayerGroup} /></div>
                 <div className="px-5 ">
@@ -33,7 +38,7 @@ function OurCulture() {
             <div className="flex border-2  border-backgroundColor  px-5 py-10">
                 <div> <FontAwesomeIcon className="text-[40px] text-backgroundColor" icon={faLink} /></div>
                 <div className="px-5 w-3/4">
-                    <h2 className="font-bold text-3xl">Vision</h2>
+                    <h2 className="font-bold text-3xl">Motto</h2>
                     <p className="font-semibold text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
                 </div>
             </div> 

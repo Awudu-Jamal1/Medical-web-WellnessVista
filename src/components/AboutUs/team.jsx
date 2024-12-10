@@ -54,7 +54,7 @@ function MeetTeam() {
           <p className="font-semibold text-gray-600 text-md py-2 pb-10">
           Murphy eHealth stands out with a dedicated team combining expertise in healthcare, technology, and innovation, offering tailored, user-centric solutions for improved health outcomes and seamless digital experiences.</p>
           <div>
-            <ProgressBar/>
+            <ProgressBar />
           </div>
         </div>
       </div>

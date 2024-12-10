@@ -1,3 +1,5 @@
+import { useInView } from "react-intersection-observer";
+
 const product=[{
     content:"A comprehensive, integrated solution that streamlines hospital and clinic management, from patient registration to billing and reporting",
     name:'eHealth Management System (eHMS)',
@@ -21,6 +23,10 @@ const product=[{
 ]
 
 function TechContent() {
+    const {ref , inView}=useInView({
+        threshold:0.1,
+        triggerOnce:true
+    })
     return (  <>
         <div className="w-3/4 m-auto py-24  ">
         <div className=" m-auto text-center max-w-3xl py-16">
@@ -31,7 +37,7 @@ function TechContent() {
         designed to enhance healthcare delivery</h6></div>
         <section className="py-14">
 
-           <div className="grid lg:grid-cols-3 gap-20">
+           <div ref={ref} className={`grid lg:grid-cols-3 gap-20 ${inView? "slide-in-bottom" :" "}`}>
             {product.map((p,id)=>(
                 <div key={id} className="services hover:scale-105 ">
                     <div><img className="hover:scale-105 w-full" src={p.image} alt="" /></div>

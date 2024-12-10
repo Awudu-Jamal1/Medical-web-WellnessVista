@@ -51,14 +51,15 @@ const Navbar = () => {
               className=" hover:text-hoverColor border-l px-8 py-8  transition-all cursor-pointer"
             >
               Home
+              <span className="hidden md:block lg:hidden">Medium</span>
             </a>
             <a
             
               href="about"
              
-              className=" hover:text-hoverColor border-l px-8 py-8 transition-all cursor-pointer"
+              className=" hover:text-hoverColor border-l  px-8 py-8 transition-all cursor-pointer"
             >
-              About Us
+              About
             </a>
             <a
               href="/services"

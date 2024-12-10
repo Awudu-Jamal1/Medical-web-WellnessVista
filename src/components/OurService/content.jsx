@@ -6,6 +6,7 @@ import telemedicine from "../../assets/img/telemedicine.jpg";
 
 
 import { useNavigate } from "react-router-dom";
+import { useInView } from "react-intersection-observer";
 const services = [
   {
     content:
@@ -40,6 +41,10 @@ const services = [
 ];
 
 function ServiceContent() {
+    const {ref , inView}=useInView({
+        threshold:0.1,
+        triggerOnce:true
+    })
   const navigate = useNavigate();
   return (
     <>
@@ -54,7 +59,7 @@ function ServiceContent() {
           </div>
         </div>
 
-        <section className="py-14">
+        <section ref={ref} className={`py-14 ${inView? "slide-in-bottom" :" "}`}>
           <div className="grid lg:grid-cols-3 gap-10">
             {services.map((p, id) => (
               <div key={id} className="services hover:scale-105 ">

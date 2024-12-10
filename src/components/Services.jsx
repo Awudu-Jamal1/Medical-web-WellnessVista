@@ -19,7 +19,7 @@ const Services = () => {
 })
 
   return (
-    <div className="  grid lg:grid-cols-2 text-white  bg-footer  justify-center lg:px-32 px-5  gap-20 py-28 ">
+    <div className="  relative grid lg:grid-cols-2 text-white  bg-footer  justify-center lg:px-32 px-5  gap-20 py-28 ">
       <div>
         <img ref={ref} className={`imageSlizer ${inView? "scale-in-center" :" "}`} src={service1} alt="" />
       </div>

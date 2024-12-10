@@ -11,7 +11,18 @@ export default {
         backgroundColor3:"rgb(255,250,225)",
         footer:"#17224d "
         
-      },
+      },screens: {
+        sm: '640px',
+        // => @media (min-width: 640px) { ... }
+  
+        md: '1024px',
+        // => @media (min-width: 1024px) { ... }
+        
+        try:"1280",
+  
+        lg: '1360px',
+        // => @media (min-width: 1280px) { ... }
+      }
     },
   },
   plugins: [],

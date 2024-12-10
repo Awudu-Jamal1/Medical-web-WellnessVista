@@ -13,7 +13,7 @@ function Structure() {
             </div>
             
         </div>
-        <div><Outlet/></div>
+        <div className=""><Outlet/></div>
         <div><Footer/></div>
     </div>
     </> );

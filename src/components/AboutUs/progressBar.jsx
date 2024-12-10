@@ -1,8 +1,13 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 
 const ProgressBar = () => {
+    const {ref , inView}=useInView({
+        threshold:0.1,
+        triggerOnce:true
+    })
   return (
-    <div className="">
+    <div ref={ref} className={`${inView? "slide-in-right" :" "}`}>
       <section className=" m-auto  rounded-md  ">
         <section className=" gap-x-6">
           {[

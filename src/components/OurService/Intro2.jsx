@@ -4,12 +4,17 @@ import {
   faScrewdriverWrench,
   faShuffle,
 } from "@fortawesome/free-solid-svg-icons";
+import { useInView } from "react-intersection-observer";
 
 function ServiceIntro() {
+    const {ref , inView}=useInView({
+        threshold:0.1,
+        triggerOnce:true
+    })
   return (
     <>
       <div className="w-3/4 m-auto py-24">
-        <div className="m-auto text-center max-w-4xl">
+        <div className={`m-auto text-center max-w-4xl ${inView? "slide-in-left" :" "}`} ref={ref} >
           <h6 className="text-sm text-backgroundColor uppercase tracking-wider font-bold py-5">
             why businesses choose us
           </h6>

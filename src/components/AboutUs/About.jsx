@@ -5,8 +5,8 @@ import groupwork from "../../assets/img/group.jpg"
 const About = () => {
   return (
     <>
-    <div className="py-24">
-      <div className="text-center py-16">
+    <div className="py-16">
+      <div className="text-center py-8">
         <h6 className="uppercase text-sm text-backgroundColor font-semibold py-2">About us</h6>
         <h1 className="text-5xl font-bold">Know More About The Business</h1>
       </div>

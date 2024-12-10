@@ -39,7 +39,7 @@ function OurService() {
   const navigate = useNavigate();
   return (
     <>
-      <div className="w-3/4 m-auto py-24">
+      <div className="w-3/4 m-auto py-16">
         <div className=" text-center py-10 max-w-3xl m-auto">
           <h1 className=" text-5xl font-bold text-center ">
             Discover Our Tech Innovation
@@ -48,7 +48,7 @@ function OurService() {
           Unlock innovative tech solutions that transform healthcare and improve outcomes across Africa.
           </p>
         </div>
-        <div ref={ref} className={`grid lg:grid-cols-3 ${inView? "tilt-in-left-1" :" "} gap-20`}>
+        <div ref={ref} className={`grid lg:grid-cols-3 ${inView? "slide-in-bottom" :" "} gap-20`}>
           {product.map((p, id) => (
             <div key={id} className="services hover:scale-105 ">
               <div>
