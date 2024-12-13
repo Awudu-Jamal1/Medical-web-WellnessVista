@@ -10,20 +10,15 @@ function MiniSentense() {
       <div className=" text-md semi-bold  grid md:grid-cols-1 lg:grid-cols-3 gap-4  leading-normal  justify-center lg:px-32 px-5 py-24 lg:py-28">
         <div ref={ref} className= {`lg:col-span-2 md-grid py-3 px-2 ${inView? "tilt-in-left-1" :" "}`} >
             <div className="text-backgroundColor    py-5 tracking-wider font-bold">
-                ABOUT US
+                ABOUT 
             </div>
         <div className="max-w-4xl py-3 leading-normal">
           <h1 className="text-4xl  font-bold tracking-wide">
-            Promoting Healthcare With IT Solutions
+           Promoting Healthcare With Tech and Informatics
           </h1>
         </div>
         <p className="max-w-5xl  font-semibold text-gray-600 leading-relaxed tracking-wide" >
-          At Murphy, we are committed to delivering innovative health technology
-          solutions and services that empower healthcare organizations to thrive
-          in the digital age. With a team of experienced professionals, we
-          provide customized healthcare technology strategies, reliable support,
-          and cutting-edge solutions tailored to meet the unique needs of your
-          organization.
+         At MeHT LTD, we harness technology to build a healthier, sustainable future. Through partnerships with stakeholders, we implement solutions that enhance healthcare access, delivery, quality, and enormous outcomes across the globe.
         </p>
         <div className="pt-10 ">
             <button className="bg-backgroundColor rounded-md text-white py-2 px-5 font-bold">Discover More</button>
