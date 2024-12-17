@@ -45,13 +45,13 @@ function MeetTeam() {
             <img src="https://show.moxcreative.com/techit/wp-content/uploads/sites/19/2021/11/green-business-team-1536x1062.jpg" className="h-full w-full" alt="" />
         </div>
         <div className="bg-[#f7f7f7] py-32  text-left px-20">
-          <h6 className="text-sm  text-backgroundColor uppercase tracking-wider font-bold py-2 ">
+          <h6 className="text-backgroundColor max-w-4xl mt-5 m-auto tex py-5 tracking-wider font-bold ">
             Professional Team
           </h6>
-          <h1 className="text-4xl capitalize font-bold pb-2 tracking-wide">
+          <h1 className="text-3xl text-backgroundColor capitalize  font-bold tracking-wider">
             Why we different
           </h1>
-          <p className="font-semibold text-gray-600 text-md py-2 pb-10">
+          <p className="lg:max-w-md md:max-w-md max-w-4xl m-auto lg:m-0 md:m-0   mt-12 font text-sm text-gray-500 leading-loose tracking-wider">
           Murphy eHealth stands out with a dedicated team combining expertise in healthcare, technology, and innovation, offering tailored, user-centric solutions for improved health outcomes and seamless digital experiences.</p>
           <div>
             <ProgressBar />

@@ -8,7 +8,7 @@ const ProgressBar = () => {
     })
   return (
     <div ref={ref} className={`${inView? "slide-in-right" :" "}`}>
-      <section className=" m-auto  rounded-md  ">
+      <section className=" m-auto  rounded-md mt-10 ">
         <section className=" gap-x-6">
           {[
             {
@@ -36,9 +36,9 @@ const ProgressBar = () => {
               className={` py-3 ${index > 0 ? 'border-t border-gray-100' : ''}`}
             >
               
-              <div className="space-y-3 flex-1">
+              <div className="space-y-2 flex-1">
                 <div className="flex items-center">
-                  <h4 className=" font-semibold text-md mr-auto text-gray-600 flex items-center">
+                  <h4 className=" uppercase tracking-wider text-xs mr-auto text-gray-600 flex items-center">
                     {item.name}
                     {/* <svg
                       xmlns="http://www.w3.org/2000/svg"

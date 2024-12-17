@@ -257,8 +257,10 @@ word-spacing: 0px;
 .splide__slide {
   display: flex;
   align-items: center;
-  background-color: #fff;
-  padding: 3rem 1.875rem;
+  height: 300px;
+  
+  background-color: #f7f7f7;
+  padding: 3rem 3.875rem;
   border-radius: 1rem;
   gap: 1rem;
 }
@@ -284,7 +286,7 @@ word-spacing: 0px;
 }
 
 .splide__pagination__page.is-active {
-  background-color: #ff6f59;
+  background-color: green;
 }
 
 .splide__arrow {
@@ -309,7 +311,7 @@ word-spacing: 0px;
 .splide__pagination__page {
   height: 10px;
   width: 10px;
-  opacity: 1;
+  opacity: 0;
 }
 
 /* Media Query */

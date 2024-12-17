@@ -4,7 +4,7 @@ import { RiMicroscopeLine } from "react-icons/ri";
 import ServicesCard from "../layouts/ServicesCard";
 import service2 from "../assets/img/service1.jpg";
 import service3 from "../assets/img/service2.jpg";
-import service1 from "../assets/img/homeservice.jpg";
+import service1 from "../assets/img/discus.png";
 import { MdHealthAndSafety } from "react-icons/md";
 import { FaHeartbeat } from "react-icons/fa";
 
@@ -12,39 +12,43 @@ import { Link, useNavigate } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 
 const Services = () => {
-  const navigate=useNavigate()
-  const {ref , inView}=useInView({
-    threshold:0.1,
-    triggerOnce:true
-})
+  const navigate = useNavigate();
+  const { ref, inView } = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
 
   return (
-    <div className="  relative grid lg:grid-cols-2 text-white  bg-footer  justify-center lg:px-32 px-5  gap-20 py-28 ">
-      <div>
-        <img ref={ref} className={`imageSlizer ${inView? "scale-in-center" :" "}`} src={service1} alt="" />
+    <div className="  relative grid md:grid-cols-2 lg:grid-cols-2  text-white  bg-[#f7f7f7]  justify-center   gap-20  ">
+      <div className="">
+        <img
+          ref={ref}
+          className={`imageSlizer  h-full w-full ${inView ? "scale-in-center" : " "}`}
+          src={service1}
+          alt=""
+        />
       </div>
-      <div className="px-2">
-        <div className="text-backgroundColor  py-5 tracking-wider font-bold">
+      <div className="px-2 py-32 text-center md:text-left lg:text-left">
+        <div className="text-backgroundColor max-w-4xl mt-5 m-auto tex py-5 tracking-wider font-bold">
           OUR SERVICE
         </div>
         <div>
-          <div className="max-w-4xl py-2 m-auto  leading-relaxed">
-            <h1 className="text-5xl   font-bold tracking-wide">
-              Managed I.T. solutions tailored to your business.
+          <div className="max-w-4xl mt-5 m-auto  leading-relaxed">
+            <h1 className="text-3xl text-backgroundColor   font-bold tracking-wider">
+              Innovation, Care, Efficiency
             </h1>
           </div>
-          <p className="max-w-5xl m-auto font-semibold  leading-relaxed tracking-wide">
-            At Murphy, we provide customized IT solutions designed to meet the
-            unique needs of your business. From infrastructure management to
-            cybersecurity, our services ensure your operations run smoothly and
-            securely, allowing you to focus on growth.
+          <p className="lg:max-w-md md:max-w-md max-w-4xl m-auto lg:m-0 md:m-0   mt-10 font text-sm text-gray-500 leading-loose tracking-wider">
+            We provide innovative, efficient solutions to enhance healthcare,
+            improve patient outcomes, streamline operations, and empower
+            providers with scalable systems
           </p>
-          <div className="pt-5">
-            <Link to={'/services'}>
-            <button  className="bg-backgroundColor rounded-md text-white py-3 px-5 font-bold">
-              Learn More
-            </button></Link>
-            
+          <div className="pt-10">
+            <Link to={"/services"}>
+              <button className="border border-backgroundColor text-xs uppercase text-backgroundColor py-3 px-8 font-bold">
+                Learn more
+              </button>
+            </Link>
           </div>
         </div>
       </div>

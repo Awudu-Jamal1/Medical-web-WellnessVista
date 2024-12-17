@@ -44,7 +44,7 @@ const Navbar = () => {
             </a>
           </div>
 
-          <nav className="  hidden lg:flex md:flex flex-row  lg:text-md text-md font-medium ">
+          <nav className="  hidden lg:flex md:flex flex-row  lg:text-sm text-sm  ">
             <a
             href="/"
               
@@ -86,7 +86,7 @@ const Navbar = () => {
 
           <a className=" hidden md:flex  place-self-center lg:flex" href="/contact">
             <button
-              className="bg-brightColor  text-white px-4 py-2  hover:bg-hoverColor transition duration-300 ease-in-out"
+              className="border border-white uppercase tracking-widest text-xs  text-white px-4 py-2  hover:bg-hoverColor transition duration-300 ease-in-out"
               // onClick={()=>navigate("/contact")}
             >
               Contact Us
@@ -153,7 +153,7 @@ const Navbar = () => {
 
           <a href="/contact" className=" lg:hidden">
             <button
-              className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
+              className=" text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
               onClick={openForm}
             >
               Contact Us
