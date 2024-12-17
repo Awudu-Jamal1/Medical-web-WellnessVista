@@ -50,25 +50,25 @@ function ServiceContent() {
     <>
       <div className="w-3/4 m-auto  ">
         <div className="py-5">
-          <h2 className="font-bold text-5xl max-w-3xl m-auto text-center">
+          <h2 className="text-3xl text-backgroundColor text-center  font-bold tracking-wider">
             We are your strategic partner
           </h2>
-          <div className="text-2xl font-semibold  py-4 m-auto text-center capitalize text-gray-600 max-w-3xl ">
+          <div className="mt-10 font text-sm text-gray-500 leading-loose tracking-wider text-center ">
             Ready to translate your ideas into innovations that add value to
             your business.
           </div>
         </div>
 
         <section ref={ref} className={`py-14 ${inView? "slide-in-bottom" :" "}`}>
-          <div className="grid lg:grid-cols-3 gap-10">
+          <div className="grid lg:grid-cols-3 gap-5 text-center">
             {services.map((p, id) => (
-              <div key={id} className="services hover:scale-105 ">
+              <div key={id} className="border ">
                 <div>
                   <img className=" w-full" src={p.image} alt="" />
                 </div>
                 <div className="px-5 py-2">
-                  <div className="py-2 text-lg font-bold">{p.name}</div>
-                  <div className="text-gray-600 font-semibold pb-8">
+                  <div className="py-2 uppercase tracking-wider text-lg font-semibold text-backgroundColor">{p.name}</div>
+                  <div className="text-gray-500 tracking-wider leading-relaxed pb-8">
                     {p.content}
                   </div>
                   {/* <div className="py-5 text-backgroundColor font-bold">

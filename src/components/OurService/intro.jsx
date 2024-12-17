@@ -14,7 +14,7 @@ function IntroService() {
             <h1 className="text-7xl tracking-normal text-center py-5 font-bold leading-tight">
               Services
             </h1>
-            <p className="text-xl text-center tracking-normal leading-normal font-semibold capitalize">
+            <p className="mt-10 font text-sm  leading-loose tracking-wider text-center">
               Murphy eHealth Technologies offers a wide range of services
               designed to support the digital transformation of healthcare
               systems.

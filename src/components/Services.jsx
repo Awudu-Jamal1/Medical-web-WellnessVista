@@ -29,7 +29,7 @@ const Services = () => {
         />
       </div>
       <div className="px-2 py-32 text-center md:text-left lg:text-left">
-        <div className="text-backgroundColor max-w-4xl mt-5 m-auto tex py-5 tracking-wider font-bold">
+        <div className="text-backgroundColor max-w-4xl mt-5 m-auto text-sm py-5 tracking-wider font-bold">
           OUR SERVICE
         </div>
         <div>

@@ -30,21 +30,21 @@ function TechContent() {
     return (  <>
         <div className="w-3/4 m-auto py-24  ">
         <div className=" m-auto text-center max-w-3xl py-16">
-            <h6 className="uppercase text-sm font-bold py-2 text-backgroundColor">Our product</h6>
-            <h1 className="text-5xl font-bold">See what we offer</h1>
-            <h6 className="text-md  text-gray-600 py-5 font-semibold  ">
+            <h6 className="text-backgroundColor max-w-4xl mt-5 m-auto text-sm py-5 tracking-wider font-bold uppercase">Our product</h6>
+            <h1 className="text-3xl    font-bold tracking-wider">See what we offer</h1>
+            <h6 className="mt-10 font text-sm text-gray-500 leading-loose tracking-wider  ">
         Murphy eHealth Technologies is proud to offer a range of innovative products
         designed to enhance healthcare delivery</h6></div>
         <section className="py-14">
 
-           <div ref={ref} className={`grid lg:grid-cols-3 gap-20 ${inView? "slide-in-bottom" :" "}`}>
+           <div ref={ref} className={`grid lg:grid-cols-2 gap-20 ${inView? "slide-in-bottom" :" "}`}>
             {product.map((p,id)=>(
-                <div key={id} className="services hover:scale-105 ">
-                    <div><img className="hover:scale-105 w-full" src={p.image} alt="" /></div>
-                    <div className="px-5 py-2">
-                        <div className="py-2 text-lg font-bold">{p.name}</div>
-                        <div className="text-gray-600 font-semibold">{p.content}</div>
-                        <div className="py-5 text-backgroundColor font-bold"><button className="">Learn More</button></div>
+                <div key={id} className="services  ">
+                    <div><img className=" w-full" src={p.image} alt="" /></div>
+                    <div className="px-8 py-10 text-center">
+                        <div className="py-2 text-lg font-semibold uppercase tracking-wider text-backgroundColor">{p.name}</div>
+                        <div className="text-gray-500 tracking-wider leading-relaxed">{p.content}</div>
+                        {/* <div className="py-5 text-backgroundColor font-bold"><button className="">Learn More</button></div> */}
                     </div>
                 </div>
             ))}
