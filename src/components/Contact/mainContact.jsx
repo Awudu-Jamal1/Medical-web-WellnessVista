@@ -54,7 +54,7 @@ function MainContact() {
                         ></path>
                       </svg>
                       <p className="block antialiased font-sans text-base leading-relaxed text-inherit font-bold">
-                        14 Claypole Road, London, England, E15 2RJ
+                      Princess House, Princess Way, Swansea, SA1 3LW
                       </p>
                     </div>
                     <div className="flex items-center gap-4">
@@ -72,7 +72,7 @@ function MainContact() {
                         ></path>
                       </svg>
                       <p className="block antialiased font-sans text-base leading-relaxed text-inherit font-bold">
-                        +44 77 636 53536
+                      +44 (0) 1792001374
                       </p>
                     </div>
                     <div className="flex items-center gap-4">
