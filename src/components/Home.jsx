@@ -13,9 +13,14 @@ const Home = () => {
         Health
         </p>
         <p className="mt-8 max-w-lg  text-sm leading-loose tracking-wider font-semibold">
-          At Murphy, we harness technology to build a healthier, sustainable
-          future. Through partnerships with stakeholders, we implement solutions
-          that enhance healthcare access, quality, and outcomes across the globe.
+        At MeHT Limited, we harness cutting-edge technology to build a
+            healthier, more sustainable future. Through strategic partnerships
+            and innovative solutions, we enhance healthcare access, improve care
+            quality, and drive better health outcomes globally. Our expertise
+            spans eHealth solutions <span className="font-semibold"></span>, <span className="font-semibold"></span> IoT products, and <span className="font-semibold">compassionate domiciliary
+care</span>, empowering healthcare providers and patients with the tools
+            they need for better health management, both at home and in clinical
+            settings.
         </p>
 
         <Button title="See Services" />
