@@ -9,18 +9,13 @@ const Home = () => {
           Shaping the Future of Healthcare
         </p>
         <p className="text-md font-semibold uppercase tracking-widest">
-        Embracing Innovation for Better
-        Health
+          Embracing Innovation for Better Health
         </p>
         <p className="mt-8 max-w-lg  text-sm leading-loose tracking-wider font-semibold">
-        At MeHT Limited, we harness cutting-edge technology to build a
-            healthier, more sustainable future. Through strategic partnerships
-            and innovative solutions, we enhance healthcare access, improve care
-            quality, and drive better health outcomes globally. Our expertise
-            spans eHealth solutions <span className="font-semibold"></span>, <span className="font-semibold"></span> IoT products, and <span className="font-semibold">compassionate domiciliary
-care</span>, empowering healthcare providers and patients with the tools
-            they need for better health management, both at home and in clinical
-            settings.
+          MeHT Limited utilizes advanced technology to improve healthcare
+          access, quality, and outcomes. Through <span className="font-semibold">eHealth</span> , <span className="font-semibold">IoT solutions</span> , and
+          <span className="font-semibold">compassionate domiciliary care</span>  , we empower providers and patients for
+          better health management globally. settings.
         </p>
 
         <Button title="See Services" />
